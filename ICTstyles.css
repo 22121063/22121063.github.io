@@ -1,3 +1,4 @@
+
 body{
 font-family: Arial, Helvetica, sans-serif;
 background-color: #B45f06;
@@ -51,7 +52,8 @@ li a:hover {
 
 #greeting{
 
- background-color: #B45f06;
+color: white;
+background-color: #B45f06;
 text-align: center;
 padding: 14px 14px;
 }
@@ -99,16 +101,6 @@ object-fit: cover;
   background-color: rgba(0,0,0,0.8);
 }
 
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 
 .numbertext {
@@ -173,7 +165,7 @@ footer {
     background-color: #E69138;
     color: white;
     text-align: center;
-    padding: 5px 0;
+  
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -334,6 +326,8 @@ display: flex;
         display: flex;
         justify-content: space-between;
         margin: 20px;
+		max-height: calc(100vh - 100px); 
+        overflow-y: auto;
     }
 	 .webbox1 {
         flex: 1;
@@ -349,9 +343,8 @@ display: flex;
         border-radius: 5px;
         margin-bottom: 10px;
     }
-    .webbox2 {
+   .webbox2 {
         flex: 1;
-		text: white;
         margin: 0 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -365,7 +358,7 @@ display: flex;
         margin-bottom: 10px;
     }
 	
-	 .webbox3 {
+	    .webbox3 {
         flex: 1;
         margin: 0 10px;
         border: 1px solid #ccc;
@@ -379,4 +372,56 @@ display: flex;
         border-radius: 5px;
         margin-bottom: 10px;
     }
-		}
+	
+	.devboxes {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+
+	}
+	
+	 .boxdev1 {
+        flex: 1;
+        margin: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+
+	}
+	.boxdev1 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+	}
+		
+	 .boxdev2 {
+        flex: 1;
+        margin: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+	 }
+	 	.boxdev2 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+	}
+	  .boxdev3 {
+        flex: 1;
+        margin: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+	  }
+	  	.boxdev3 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+	}
+}
